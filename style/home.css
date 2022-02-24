@@ -1,0 +1,53 @@
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%; /* 1ªdiv 2ª div */
+  grid-template-rows: 7.125rem 1fr; /* 1ªdiv com 114px e 2ªdiv com tudo em 1fr */
+
+  /* Definindo elementos dos quadrantes: */
+  grid-template-areas:
+    'header header'
+    'left right';
+}
+
+header {
+  /* Identificando elemento para os quadrantes: */
+  grid-area: header;
+}
+
+#bg {
+  /* Identificando elemento para os quadrantes: */
+  grid-area: left;
+  background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+  /* Top/contain diz pra se alinhar ao topo e se encaixar à div que ela está */
+}
+
+main {
+  /* Identificando elemento para os quadrantes: */
+  grid-area: right;
+  display: flex;
+  align-items: center;
+}
+
+main .container {
+  /* Pega sempre o menor e pode ir até 100% */
+  width: min(22.7rem 100%);
+}
+
+main h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  font-size: clamp(20px 5vw 1.75rem);
+  margin-bottom: 1.5rem;
+}
+
+input {
+  border: 0.125rem solid var(--grey-blue);
+  padding: 0 1rem;
+}
+
+input,
+button,
+.button {
+  width: 100%;
+  margin-bottom: 1.125rem;
+}
