@@ -30,8 +30,8 @@ html {
 }
 
 body {
+  display: flex;
   height: 100vh;
-  width: 100vw;
   background: var(--background);
   /* Quando colocamos font-size apenas no body, ele não engloba os button, input e textarea, por isso declaramos separadamente */
 }

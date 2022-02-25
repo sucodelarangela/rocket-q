@@ -19,6 +19,8 @@ header {
   grid-area: left;
   background: url('/assets/home-bg-img.svg') no-repeat top/contain;
   /* Top/contain diz pra se alinhar ao topo e se encaixar à div que ela está */
+  background-position: -6rem;
+  /*  */
 }
 
 main {
@@ -26,11 +28,12 @@ main {
   grid-area: right;
   display: flex;
   align-items: center;
+  margin-top: -12rem;
 }
 
 main .container {
   /* Pega sempre o menor e pode ir até 100% */
-  width: min(22.7rem 100%);
+  width: min(22.7rem, 100%);
 }
 
 main h2 {
@@ -50,4 +53,50 @@ button,
 .button {
   width: 100%;
   margin-bottom: 1.125rem;
+}
+
+/* Separator line */
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3) {
+  background: var(--grey-blue);
+  width: 100%;
+  height: 1px;
+  margin: 2.5rem 0;
+}
+
+.separator div:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  color: var(--grey-blue);
+  font-weight: 400;
+  margin: 0 0.85rem;
+  line-height: 0;
+}
+
+/* Create balls */
+.ball {
+  background: var(--blue);
+  width: 13.25rem;
+  height: 13.25rem;
+  position: fixed;
+  clip-path: circle();
+  opacity: 0.1;
+}
+
+.ball.top {
+  top: -24rem;
+  right: -25.25rem;
+  width: 39.5rem;
+  height: 39.5rem;
+  z-index: -1;
+}
+
+.ball.bottom {
+  bottom: -9.25rem;
+  right: 3.5rem;
+  z-index: -1;
 }
