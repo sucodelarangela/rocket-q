@@ -1,0 +1,46 @@
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--overlay);
+  display: flex;
+}
+
+.modal-wrapper .modal {
+  background: var(--white);
+  width: min(37rem, 90%);
+  margin: auto;
+  border-radius: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 4rem 5.375rem;
+  text-align: center;
+}
+
+.modal-wrapper .modal h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--black);
+}
+
+.modal-wrapper .modal p {
+  margin-bottom: 1.5rem;
+  color: var(--grey-dark);
+}
+
+.modal-wrapper .modal input {
+  border-radius: 0.5rem;
+  border: 2px solid var(--blue);
+  padding: 0.8125rem 1rem;
+  margin-bottom: 2.5rem;
+  outline: none;
+  width: min(18rem, 70%);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}

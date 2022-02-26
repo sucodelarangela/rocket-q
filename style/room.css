@@ -85,3 +85,56 @@
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
+.question-wrapper {
+  background: var(--light-blue);
+  margin-bottom: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem;
+  padding: 1.5rem;
+  padding-right: 2rem;
+}
+
+.question-wrapper .question-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.question-wrapper .question-content .user {
+  background: var(--blue);
+  clip-path: circle();
+  padding: 0.875rem;
+}
+
+.question-wrapper .question-content p {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  word-break: break-word;
+  min-height: 3.25rem;
+}
+
+.question-wrapper .actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.question-wrapper .actions > a {
+  display: flex;
+}
+
+/* a + a seleciona o primeiro a e pega o irmão dele, ou seja, é similar a a:nth-child(2) */
+.question-wrapper .actions > a + a {
+  margin-left: 1.5rem;
+}
+
+.question-wrapper .actions img {
+  margin-right: 0.5rem;
+}
+
+.question-wrapper.read {
+  background: var(--grey-dark-opacity);
+}
+
+.question-wrapper.read .question-content .user {
+  background: var(--grey-blue);
+}
