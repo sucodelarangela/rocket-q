@@ -1,0 +1,20 @@
+// Importar o express que acabamos de instalar e que está na pasta node_modules>express
+const express = require('express')
+const route = require('./route') // Importa o módulo de rotas
+const path = require('path') // Módulo do express
+
+// Criar um server
+const server = express()
+
+server.set('view engine', 'ejs') // Diz ao express que nossa view engine é o ejs
+
+server.use(express.static('public')) // Usa o conteúdo estático na pasta 'public'
+
+// Por padrão, a pasta "views" (que contém o arquivo 'index.ejs') ficaria na raiz do projeto. Como em nosso projeto ela está dentro da pasta 'src', devemos indicar isso para o express:
+// A pasta 'views' estará dentro de um diretório qualquer (__dirname)e o 'join' une o nome do diretório à pasta 'views'
+server.set('views', path.join(__dirname, 'views'))
+
+server.use(route) // Usa o módulo de rotas
+
+// Iniciar o servidor numa determinada porta, no nosso caso, porta 3000
+server.listen(3000, () => console.log('RODANDO'))

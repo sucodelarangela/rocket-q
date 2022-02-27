@@ -1,0 +1,27 @@
+{
+  "name": "2022.02---rocket-q",
+  "version": "1.0.0",
+  "description": "Page developed during Rocketseat NLW Together event with the objective of learning NodeJS, EJS, Express and SQLite.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sucodelarangela/rocket-q.git"
+  },
+  "keywords": [],
+  "author": "Angela Caldas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sucodelarangela/rocket-q/issues"
+  },
+  "homepage": "https://github.com/sucodelarangela/rocket-q#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
