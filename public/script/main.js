@@ -27,8 +27,15 @@ deleteButton.forEach(button => {
 function handleClick(event, check = true) {
   event.preventDefault()
 
-  const text = check ? 'Marcar como lida' : 'Excluir'
+  // Pegar os dados para o backend
+  const roomId = document.querySelector('#room-id').dataset.id
+  const slug = check ? 'check' : 'delete'
+  const questionId = event.target.dataset.id
+  const form = document.querySelector('.modal form')
+  form.setAttribute('action', `/room/${roomId}/${questionId}/${slug}`)
+
   // No ato do evento, checa se é verdadeiro e aplicamos os operadoradores ternários abaixo:
+  const text = check ? 'Marcar como lida' : 'Excluir'
   modalTitle.innerHTML = `${text} esta pergunta?`
   modalDescription.innerHTML = check
     ? `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`
