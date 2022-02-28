@@ -14,6 +14,9 @@ server.use(express.static('public')) // Usa o conteúdo estático na pasta 'publ
 // A pasta 'views' estará dentro de um diretório qualquer (__dirname)e o 'join' une o nome do diretório à pasta 'views'
 server.set('views', path.join(__dirname, 'views'))
 
+// Pega o conteúdo que vem do formulário, decodifica e manda para o controller (esse é o midware)
+server.use(express.urlencoded({extended: true}))
+
 server.use(route) // Usa o módulo de rotas
 
 // Iniciar o servidor numa determinada porta, no nosso caso, porta 3000
