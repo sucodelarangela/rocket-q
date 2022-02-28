@@ -84,6 +84,7 @@ button,
   color: var(--white);
   transition: filter 0.2s;
   cursor: pointer;
+  padding: 0.8125rem 2rem;
 }
 
 button:hover,
@@ -107,14 +108,12 @@ button.outlined,
 button.red,
 .button.red {
   background: var(--red);
-  padding: 0.8125rem 2rem;
 }
 
 button.grey,
 .button.grey {
   background: var(--grey-light);
   color: var(--grey-dark);
-  padding: 0.8125rem 2rem;
 }
 
 /* HEADER */
