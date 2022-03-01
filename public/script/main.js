@@ -32,7 +32,7 @@ function handleClick(event, check = true) {
   const slug = check ? 'check' : 'delete'
   const questionId = event.target.dataset.id
   const form = document.querySelector('.modal form')
-  form.setAttribute('action', `/room/${roomId}/${questionId}/${slug}`)
+  form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`)
 
   // No ato do evento, checa se é verdadeiro e aplicamos os operadoradores ternários abaixo:
   const text = check ? 'Marcar como lida' : 'Excluir'
