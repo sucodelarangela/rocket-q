@@ -4,7 +4,8 @@
   "description": "Page developed during Rocketseat NLW Together event with the objective of learning NodeJS, EJS, Express and SQLite.",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "repository": {
     "type": "git",
