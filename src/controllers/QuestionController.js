@@ -1,15 +1,26 @@
 const Database = require('../db/config')
 
 module.exports = {
-  index(req, res) {
+  async index(req, res) {
+    const db = await Database()
     const roomId = req.params.room
     const questionId = req.params.question
     const action = req.params.action
     const password = req.body.password // password é o nome dado ao input de senha na modal
 
-    console.log(
-      `room = ${roomId}, questionId = ${questionId}, action = ${action}, password = ${password}`
-    )
+    // Verificar se a senha está correta
+    // db.all pega todos os dados (array), já db.get pega um único elemento
+    const verifyRoom = await db.get(`SELECT * FROM rooms WHERE id = ${roomId}`)
+    if (verifyRoom.pass == password) {
+      if (action == 'delete') {
+        await db.run(`DELETE FROM questions WHERE id = ${questionId}`)
+      } else if (action == 'check') {
+        await db.run(`UPDATE questions SET read = 1 WHERE id = ${questionId}`)
+      }
+      res.redirect(`/room/${roomId}`)
+    } else {
+      res.render('passincorrect', {roomId: roomId})
+    }
   },
 
   async create(req, res) {
