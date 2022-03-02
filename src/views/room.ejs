@@ -60,14 +60,14 @@
         <section id="questions">
           <h2 class="sr-only">Perguntas da Comunidade</h2>
           <div class="questions">
-            <!-- Pergunta 01 -->
+            <% questions.forEach(question => { %>
             <div class="question-wrapper">
               <div class="question-content">
                 <div class="user">
                   <img src="/images/user.svg" alt="Avatar do usuário" />
                 </div>
                 <div class="question">
-                  <p>Qual a diferença entre const, var e let no JavaScript?</p>
+                  <p><%= question.title %></p>
                 </div>
               </div>
               <div class="actions">
@@ -80,59 +80,18 @@
                 >
               </div>
             </div>
-            <!-- Pergunta 02 -->
-            <div class="question-wrapper">
-              <div class="question-content">
-                <div class="user">
-                  <img src="/images/user.svg" alt="Avatar do usuário" />
-                </div>
-                <div class="question">
-                  <p>O que é TypeScript?</p>
-                </div>
-              </div>
-              <div class="actions">
-                <a href="#" class="check" data-id="3">
-                  <img src="/images/check.svg" alt="Marcar como lida" />
-                  Marcar como lida</a
-                >
-                <a href="#" class="delete" data-id="3">
-                  <img src="/images/trash.svg" alt="Excluir" />Excluir</a
-                >
-              </div>
-            </div>
+            <% }) %>
 
-            <!-- Pergunta 03 -->
-            <div class="question-wrapper">
-              <div class="question-content">
-                <div class="user">
-                  <img src="/images/user.svg" alt="Avatar do usuário" />
-                </div>
-                <div class="question">
-                  <p>
-                    Você já sabe quais as bases que você precisa melhorar para
-                    alcançar seu próximo nível com maestria?
-                  </p>
-                </div>
-              </div>
-              <div class="actions">
-                <a href="#" class="check" data-id="4">
-                  <img src="/images/check.svg" alt="Marcar como lida" />
-                  Marcar como lida</a
-                >
-                <a href="#" class="delete" data-id="4">
-                  <img src="/images/trash.svg" alt="Excluir" />Excluir</a
-                >
-              </div>
-            </div>
+            <!-- Pergunta lida -->
 
-            <!-- Pergunta 04 -->
+            <% questionsRead.forEach(questionRead => { %>
             <div class="question-wrapper read">
               <div class="question-content">
                 <div class="user">
                   <img src="/images/user.svg" alt="Avatar do usuário" />
                 </div>
                 <div class="question">
-                  <p>O que é JavaScript?</p>
+                  <p><%= questionRead.title %></p>
                 </div>
               </div>
               <div class="actions">
@@ -142,6 +101,7 @@
                 >
               </div>
             </div>
+            <% }) %>
           </div>
         </section>
       </main>
