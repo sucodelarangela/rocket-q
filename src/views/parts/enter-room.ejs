@@ -1,9 +1,14 @@
 <section>
   <h2>Entre como participante</h2>
-  <form action="">
+  <form action="/enterroom" method="POST">
     <!-- A classe sr-only (screen only) deixa o label invisível para o navegador, mas ele continua existindo, então as ferramentas de busca e leitores de tela vão ler a label normalmente  -->
     <label class="sr-only" for="room-id">Código da sala</label>
-    <input type="number" name="" id="room-id" placeholder="Código da sala" />
+    <input
+      type="number"
+      name="roomId"
+      id="room-id"
+      placeholder="Código da sala"
+    />
     <button>
       <img src="images/enter-room.svg" alt="Entrar na sala" />
       Entrar na sala

@@ -21,4 +21,6 @@ route.post('/question/create/:room', QuestionController.create)
 
 route.post('/create-room', RoomController.create)
 
+route.post('/enterroom', RoomController.enter)
+
 module.exports = route
