@@ -2,6 +2,7 @@
 const express = require('express')
 const route = require('./route') // Importa o módulo de rotas
 const path = require('path') // Módulo do express
+const port = process.env.PORT || 3000 // Config para rodar no deploy, indica que deve ser processada a porta do environment ou a 3000
 
 // Criar um server
 const server = express()
@@ -20,4 +21,4 @@ server.use(express.urlencoded({extended: true}))
 server.use(route) // Usa o módulo de rotas
 
 // Iniciar o servidor numa determinada porta, no nosso caso, porta 3000
-server.listen(3000, () => console.log('RODANDO'))
+server.listen(port, () => console.log('RODANDO'))
