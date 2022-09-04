@@ -32,7 +32,11 @@ Este projeto foi desenvolvido durante o evento **#NLWtogether** promovido pela [
   <img src="https://img.shields.io/badge/EJS-A91E50?style=for-the-badge" />
 </div>
 
+<div id='howto'>
+  
 ### ⚙️ Como usar
+  
+</div>
 
 Para experimentar a aplicação rodando-a localmente em seu computador, siga as etapas a seguir:
 
