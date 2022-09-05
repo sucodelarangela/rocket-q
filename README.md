@@ -14,16 +14,13 @@ Este projeto foi desenvolvido durante o evento **#NLWtogether** promovido pela [
 | 🪧 Vitrine Dev |     |
 | ------------- | --- |
 | ✨ Nome        | **Rocket.Q** - Rocketseat |
-| 🏷️ Tecnologias | HTML, CSS, JavaScript, EJS, Node, Express, SQLite |
+| 🏷️ Tecnologias | CSS, JavaScript, EJS, Node, Express, SQLite |
 | 🚀 URL Front-end | Veja como baixar e rodar localmente no item [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [Protótipo do Figma](https://www.figma.com/community/file/1009821158959690135) |
 
 ![](https://raw.githubusercontent.com/sucodelarangela/rocket-q/master/public/images/cover.png#vitrinedev)
 
-## Detalhes do projeto
-
 <div>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
@@ -34,7 +31,7 @@ Este projeto foi desenvolvido durante o evento **#NLWtogether** promovido pela [
 
 <div id='howto'>
   
-### ⚙️ Como usar
+## ⚙️ Como usar
   
 </div>
 
@@ -75,14 +72,16 @@ RODANDO
 <div id="English">
 
 _English version_
+  
+</div>
 
-### 🔎 Overview
+## 🔎 Overview
 
 **Rocket.Q** is a platform for anonymous questions where it is possible to create private rooms. The admin/creator of the room can manage the questions with a personal password and can mark them as read or delete them.
 
 This project was developed during the event **#NLWtogether** hosted by [Rocketseat](https://www.rocketseat.com.br) with the help of the instructor [Jakeliny Gracielly](https://github.com/jakeliny).
 
-### ⚙️ How to use it
+## ⚙️ How to use it
 
 Download this repository and run your terminal inside the project directory.
 
