@@ -13,7 +13,7 @@ Este projeto foi desenvolvido durante o evento **#NLWtogether** promovido pela [
 <!-- prettier-ignore -->
 | 🪧 Vitrine Dev |     |
 | ------------- | --- |
-| ✨ Nome        | **Rocket.Q** |
+| ✨ Nome        | **Rocket.Q** - Rocketseat |
 | 🏷️ Tecnologias | HTML, CSS, JavaScript, EJS, Node, Express, SQLite |
 | 🚀 URL Front-end | Veja como baixar e rodar localmente no item [**⚙️ Como usar**](#howto) |
 | 🔥 Desafio     | [Protótipo do Figma](https://www.figma.com/community/file/1009821158959690135) |
